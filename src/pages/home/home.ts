@@ -34,7 +34,7 @@ export class HomePage {
     this.camera.getPicture(options).then((imageData) => {
       if (imageData) {
         this.image = 'data:image/jpeg;base64,' + imageData;
-        this.timeStamp = JSON.stringify(new Date());
+        this.timeStamp = new Date();
 
         this.pictures.push({'src':this.image,'timeStamp':this.timeStamp});
         console.log(this.pictures);

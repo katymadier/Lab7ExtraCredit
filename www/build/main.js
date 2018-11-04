@@ -30,8 +30,10 @@ var GalleryPage = /** @class */ (function () {
         this.image = "";
         this.timeStamp = "";
         this.storage.get('pictures').then(function (val) {
-            _this.pictures = val;
-            console.log('val');
+            for (var i = 0; i < 9; i++) {
+                _this.pictures.push(val[i]);
+            }
+            console.log(_this.pictures);
         });
     }
     GalleryPage.prototype.ionViewDidLoad = function () {
@@ -39,11 +41,12 @@ var GalleryPage = /** @class */ (function () {
     };
     GalleryPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-gallery',template:/*ion-inline-start:"/Users/katymadier/Github/SI669/lab7/Lab7ExtraCredit/src/pages/gallery/gallery.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Photo Gallery</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col size="3" *ngFor="let picture of pictures">\n        <img [src]=picture.src>\n        <div>{{picture.timeStamp}}</div>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/katymadier/Github/SI669/lab7/Lab7ExtraCredit/src/pages/gallery/gallery.html"*/,
+            selector: 'page-gallery',template:/*ion-inline-start:"/Users/katymadier/Github/SI669/lab7/Lab7ExtraCredit/src/pages/gallery/gallery.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Photo Gallery</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col size="3" *ngFor="let picture of pictures">\n          <img [src]=picture.src>\n          {{picture.timeStamp}}\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/katymadier/Github/SI669/lab7/Lab7ExtraCredit/src/pages/gallery/gallery.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]) === "function" && _c || Object])
     ], GalleryPage);
     return GalleryPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=gallery.js.map

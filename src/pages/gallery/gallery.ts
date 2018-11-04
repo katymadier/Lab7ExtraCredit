@@ -15,8 +15,10 @@ export class GalleryPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private storage: Storage) {
     this.storage.get('pictures').then((val)=>{
-      this.pictures=val;
-      console.log('val')
+      for (let i=0;i<9;i++){
+        this.pictures.push(val[i]);
+      }
+      console.log(this.pictures)
     });
   }
 
