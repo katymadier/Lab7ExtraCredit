@@ -31,9 +31,12 @@ var GalleryPage = /** @class */ (function () {
         this.timeStamp = "";
         this.storage.get('pictures').then(function (val) {
             for (var i = 0; i < 9; i++) {
-                _this.pictures.push(val[i]);
+                if (val[i]) {
+                    _this.pictures.push(val[i]);
+                    console.log("val", val[i]);
+                }
             }
-            console.log(_this.pictures);
+            console.log("pictures", _this.pictures);
         });
     }
     GalleryPage.prototype.ionViewDidLoad = function () {
