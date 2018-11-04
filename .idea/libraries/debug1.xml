@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="debug1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/platforms/android/app/build/intermediates/transforms/stackFramesFixer/debug/1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/platforms/android/app/build/intermediates/transforms/stackFramesFixer/debug/0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/platforms/android/app/build/intermediates/transforms/stackFramesFixer/debug/4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/platforms/android/app/build/intermediates/transforms/stackFramesFixer/debug/2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/platforms/android/app/build/intermediates/transforms/stackFramesFixer/debug/3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

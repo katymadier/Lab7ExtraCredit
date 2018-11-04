@@ -39,12 +39,11 @@ var GalleryPage = /** @class */ (function () {
     };
     GalleryPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-gallery',template:/*ion-inline-start:"/Users/katymadier/Github/SI669/lab7/lab7CameraExtraCredit/src/pages/gallery/gallery.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Photo Gallery</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col size="3" *ngFor="let picture of pictures">\n        <img [src]=picture.src>\n        <div>{{picture.timeStamp}}</div>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/katymadier/Github/SI669/lab7/lab7CameraExtraCredit/src/pages/gallery/gallery.html"*/,
+            selector: 'page-gallery',template:/*ion-inline-start:"/Users/katymadier/Github/SI669/lab7/Lab7ExtraCredit/src/pages/gallery/gallery.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Photo Gallery</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col size="3" *ngFor="let picture of pictures">\n        <img [src]=picture.src>\n        <div>{{picture.timeStamp}}</div>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/katymadier/Github/SI669/lab7/Lab7ExtraCredit/src/pages/gallery/gallery.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]])
     ], GalleryPage);
     return GalleryPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=gallery.js.map
@@ -163,12 +162,11 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/katymadier/Github/SI669/lab7/lab7CameraExtraCredit/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Picture Taker\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <button ion-button full (click)="goToGallery()">Gallery</button>\n  <button ion-button full ng-click="showhide()" (click)="takePic()">Take Pic</button>\n  <img id="homeImage"[src]="image"/>\n  <div id="timeStamp"></div>\n</ion-content>\n'/*ion-inline-end:"/Users/katymadier/Github/SI669/lab7/lab7CameraExtraCredit/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/katymadier/Github/SI669/lab7/Lab7ExtraCredit/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Picture Taker\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <button ion-button full (click)="goToGallery()">Gallery</button>\n  <button ion-button full ng-click="showhide()" (click)="takePic()">Take Pic</button>\n  <img id="homeImage"[src]="image"/>\n  <div id="timeStamp"></div>\n</ion-content>\n'/*ion-inline-end:"/Users/katymadier/Github/SI669/lab7/Lab7ExtraCredit/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */]])
     ], HomePage);
     return HomePage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -295,7 +293,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/katymadier/Github/SI669/lab7/lab7CameraExtraCredit/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/katymadier/Github/SI669/lab7/lab7CameraExtraCredit/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/katymadier/Github/SI669/lab7/Lab7ExtraCredit/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/katymadier/Github/SI669/lab7/Lab7ExtraCredit/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
