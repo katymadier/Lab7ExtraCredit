@@ -25674,6 +25674,11 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+page-gallery #gallery {
+  height: 100vh;
+  overflow: hidden;
+}
+
 page-home #homeImage {
   width: 100%;
   margin: 0 auto;
